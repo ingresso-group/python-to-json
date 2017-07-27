@@ -57,3 +57,6 @@ print(test_object.as_json(hide_empty=True, hide_none=True))
 >> {"some_string": "string"}
 
 ```
+
+# Tests
+Run tests with `py.test tests/`
