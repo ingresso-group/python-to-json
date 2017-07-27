@@ -47,4 +47,13 @@ print(test_object.as_json())
 print(type(test_object.as_json()))
 <type 'str'>
 
+# Allows you to hide empty and None fields:
+test_object.some_list = []
+test_object.some_dict = {}
+test_object.some_datetime = None
+test_object.some_int = None
+test_object.some_float = None
+print(test_object.as_json(hide_empty=True, hide_none=True))
+>> {"some_string": "string"}
+
 ```
