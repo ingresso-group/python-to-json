@@ -4,7 +4,7 @@ Converts Python objects into JSON serializable dictionaries.
 # Example
 ```python
 
-from python_to_json import JSONMixin
+from python_to_json.mixins import JSONMixin
 
 
 # Your Python class
